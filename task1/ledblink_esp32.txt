@@ -1,0 +1,22 @@
+#define LED_PIN 19
+
+void setup() {
+  // Set the LED pin as an output
+  pinMode(LED_PIN, OUTPUT);
+}
+
+void loop() {
+  // Turn on the LED
+  digitalWrite(LED_PIN, HIGH);
+  delay(2000);
+  
+  // Turn off the LED
+  digitalWrite(LED_PIN, LOW);
+  delay(4000);
+
+  digitalWrite(LED_PIN, HIGH);
+  delay(4000);
+
+  digitalWrite(LED_PIN, LOW);
+  delay(2000);
+}
